@@ -3,4 +3,4 @@ mono: none
 dotnet: 1.0.1
 dist: trusty
 script:
-  - xbuild /p:Configuration=Release DoINeedThis.sln
+  - dotnet build --configuration "Release" --output deploy
